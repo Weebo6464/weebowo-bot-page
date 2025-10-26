@@ -1,61 +1,87 @@
-# WeebOwO Discord Bot Website
+# WeebOwO Discord Bot Website 💜💚
 
-## Setup Instructions
+A modern, animated invite website for **WeebOwO** - a fun Discord bot with lots of silly and useful commands created by **weebo64**.
 
-### 1. Install Required Packages
+![WeebOwO Banner](website/bot_pfp.png)
 
-First, install Flask for the API server:
+## 🎨 About the Website
 
-```bash
-pip install flask flask-cors
-```
+This is the official invite and showcase website for WeebOwO, featuring her signature purple and green color scheme with modern animations and interactive elements.
 
-### 2. Add Your Bot Profile Picture
+### Visual Design
+- **WeebOwO's Colors**: Vibrant purple (#9300C3) and lime green (#4AC300)
+- **Animated Particle Background**: 100 floating particles creating a dynamic, living background
+- **Smooth Animations**: Fade-ins, parallax scrolling, hover effects, and sparkle cursor trails
+- **Glassmorphism UI**: Modern frosted glass effects on cards and sections
+- **Floating Bot Avatar**: Continuous floating animation with glowing pulse effect
 
-Place your `bot_pfp.png` image in the `website` folder.
+### Features
+- **🔴 Live Server Count**: Displays how many servers WeebOwO is currently in, updated in real-time
+- **🌓 Theme Switcher**: Toggle between Dark Mode, Light Mode, or System preference
+- **📱 Fully Responsive**: Works beautifully on desktop, tablet, and mobile
+- **⚡ Fast & Smooth**: Hardware-accelerated animations running at 60fps
+- **✨ Interactive Elements**: Sparkles follow your cursor, cards lift on hover
 
-### 3. Start Your Bot
+### Command Showcase
+The website displays all of WeebOwO's commands organized by category:
+- Fun commands (hugs, pats, ships, 8ball, etc.)
+- Music & media (YouTube/Spotify playback, downloads)
+- Utility & info (user info, server info, AFK system)
+- Mario Kart Wii friend codes (with regions and modpacks)
+- AutoMod and logging features
 
-Run your bot as normal:
+## � About WeebOwO
 
-```bash
-python bot.py
-```
+**WeebOwO** is a Discord bot created by **Weebo64** with a focus on fun, silly commands and useful server moderation features. She's designed to be friendly, cute, and helpful - bringing joy to Discord servers with commands like `/weebowo` for random cute images, music playback, interactive games, and more.
 
-The bot will automatically start an API server on `http://localhost:5000` that serves the server count.
+### WeebOwO's Personality
+- Fun and silly :3
+- Helpful with moderation
+- Loves music and games
+- Mario Kart Wii enthusiast
+- Always there to make your server more fun!
 
-### 4. Open the Website
+### Character Design
+WeebOwO's character art is created by **kytronix** and **funnyhoohooman**, featuring her signature purple and green aesthetic.
 
-Simply open `website/index.html` in your browser. The server count will automatically load from your running bot!
+## 🎨 Design Credits
 
-## How It Works
+- **Website Design**: Inspired by carl.gg's website
+- **Bot Creator**: weebo64
+- **Character Art**: kytronix & funnyhoohooman
+- **Color Scheme**: WeebOwO's signature purple and green colors
 
-- Your bot runs a Flask API server in the background (port 5000)
-- The website fetches the server count from `http://localhost:5000/api/stats`
-- Every time someone opens the website, it gets the live server count
-- The count automatically updates when your bot joins/leaves servers
+## 🌐 Live Features
 
-## Hosting Online
+### Real-Time Statistics
+The website connects to WeebOwO's API to display:
+- Current server count
+- Live updates when the bot joins new servers
+- Animated number counter on page load
 
-If you want to host this website online:
+### Theme System
+Three theme options with persistent storage:
+- **🌙 Dark Mode**: Full vibrant colors on dark navy background
+- **☀️ Light Mode**: Clean, bright theme with subtle purple/green accents
+- **💻 System**: Automatically matches your operating system's theme preference
 
-1. **Host your bot** on a service like Railway, Heroku, or a VPS
-2. **Update the API URL** in `script.js` line 8 to your bot's public URL:
-   ```javascript
-   const response = await fetch('https://your-bot-url.com/api/stats');
-   ```
-3. **Upload the website** to GitHub Pages, Netlify, or Vercel
+## Contact & Support
 
-## API Endpoint
+- **Creator**: @weebo64 on Discord
+- **Website**: [weebo64.com](https://www.weebo64.com)
+- **Support Server**: discord.gg/3knu2FNqDG
+- **Help Channel**: #help-about-the-bot
 
-The bot exposes one endpoint:
+## 🎯 Purpose
 
-- `GET /api/stats` - Returns:
-  ```json
-  {
-    "server_count": 5,
-    "user_count": 1234
-  }
-  ```
+This website serves as:
+- An invite page for adding WeebOwO to your Discord server
+- A showcase of all her commands and features
+- A demonstration of her personality and design aesthetic
+- A hub for users to learn about what WeebOwO can do
 
-Enjoy! :3
+---
+
+**Made with 💖 by weebo64**
+
+*Have fun with the bot :3*
