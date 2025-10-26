@@ -42,7 +42,7 @@ The website displays all of WeebOwO's commands organized by category:
 - Always there to make your server more fun!
 
 ### Character Design
-WeebOwO's character art is created by **kytronix** and **funnyhoohooman**, featuring her signature purple and green aesthetic.
+WeebOwO's character is originally by Weebo64, but her art is created by **kytronix** and **funnyhoohooman**, featuring her signature purple and green aesthetic.
 
 ## 🎨 Design Credits
 
