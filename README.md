@@ -2,7 +2,7 @@
 
 A modern, animated invite website for **WeebOwO** - a fun Discord bot with lots of silly and useful commands created by **weebo64**.
 
-![WeebOwO Banner](website/bot_pfp.png)
+![WeebOwO Banner](./bot_pfp.png)
 
 ## 🎨 About the Website
 
@@ -85,3 +85,4 @@ This website serves as:
 **Made with 💖 by weebo64**
 
 *Have fun with the bot :3*
+
