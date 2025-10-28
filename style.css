@@ -521,6 +521,66 @@ footer a:hover {
     color: #fff;
 }
 
+/* Warning Banner */
+.warning-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 16px 20px;
+    z-index: 10002;
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.5);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    animation: slideDown 0.8s ease-out 0.5s forwards, warningPulse 2s ease-in-out 1.3s infinite;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+@keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes warningPulse {
+    0%, 100% {
+        box-shadow: 0 4px 20px rgba(220, 38, 38, 0.5);
+    }
+    50% {
+        box-shadow: 0 4px 30px rgba(220, 38, 38, 0.8);
+    }
+}
+
+.warning-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.warning-icon {
+    font-size: 1.5rem;
+    animation: warningShake 1.5s ease-in-out infinite;
+}
+
+@keyframes warningShake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+.warning-text {
+    line-height: 1.5;
+}
+
 /* Loading Screen */
 #loading-screen {
     position: fixed;
@@ -752,6 +812,15 @@ body.light-mode .loader-circle {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .warning-content {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
+    .warning-icon {
+        font-size: 1.2rem;
+    }
+
     header h1 {
         font-size: 2.8rem;
         letter-spacing: -1px;
